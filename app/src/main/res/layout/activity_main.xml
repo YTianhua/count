@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TeamA"
+            android:layout_marginTop="16dp"
+
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:onClick="click"
+            android:id="@+id/countA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="48sp"/>
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_1_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Point+1" />
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_2_A"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Point+2" />
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_3_A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Point+3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TeamB"
+            android:layout_marginTop="16dp"
+
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/countB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="48sp"/>
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_1_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Point+1" />
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_2_B"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Point+2" />
+
+        <Button
+            android:onClick="click"
+            android:id="@+id/but_3_B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Point+3" />
+    </LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:onClick="click"
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="123dp"
+        android:text="Reset" />
+</RelativeLayout>
